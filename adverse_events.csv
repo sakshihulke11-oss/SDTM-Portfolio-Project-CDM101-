@@ -1,0 +1,52 @@
+AE_ID,SUBJECT_ID,AE_TERM,START_DATE,END_DATE,SEVERITY,RELATEDNESS,OUTCOME
+AE-0001,SUB-001,Injection site reaction,2025-02-04,2025-02-18,Mild,Not Related,Resolved
+AE-0002,SUB-001,Rash,2025-01-17,2025-01-18,Moderate,Not Related,Resolved
+AE-0003,SUB-004,Injection site reaction,2025-02-16,2025-03-05,Moderate,Related,Ongoing
+AE-0004,SUB-004,Insomnia,2025-05-01,2025-05-07,Mild,Not Related,Ongoing
+AE-0005,SUB-005,Diarrhea,2025-07-23,2025-08-09,Moderate,Not Related,Resolved
+AE-0006,SUB-006,Upper respiratory infection,2025-04-04,2025-04-05,Moderate,Related,Resolved with sequelae
+AE-0007,SUB-007,Rash,2025-04-10,2025-04-29,Mild,Possibly Related,Ongoing
+AE-0008,SUB-011,Upper respiratory infection,2025-07-19,2025-07-25,Moderate,Possibly Related,Ongoing
+AE-0009,SUB-011,Back pain,2025-07-08,2025-07-16,Mild,Related,Resolved with sequelae
+AE-0010,SUB-012,Back pain,2025-07-23,2025-08-10,Severe,Related,Resolving
+AE-0011,SUB-013,Back pain,2025-07-24,2025-08-10,Severe,Related,Ongoing
+AE-0012,SUB-013,Dizziness,2025-06-22,2025-07-11,Severe,Related,Resolving
+AE-0013,SUB-014,Insomnia,2025-09-02,2025-09-21,,Possibly Related,Resolved
+AE-0014,SUB-016,Headache,2025-05-04,2025-05-23,Mild,Possibly Related,Resolved with sequelae
+AE-0015,SUB-017,Headache,2025-08-06,2025-08-13,Severe,Related,Resolved
+AE-0016,SUB-018,Insomnia,2025-04-15,2025-05-01,Mild,Not Related,Ongoing
+AE-0017,SUB-019,Fatigue,2025-08-21,2025-09-03,Moderate,Not Related,Resolved with sequelae
+AE-0018,SUB-020,Headache,2025-08-14,2025-08-26,Mild,Possibly Related,Resolving
+AE-0019,SUB-021,Dizziness,2025-07-19,2025-07-20,Moderate,Possibly Related,Resolved with sequelae
+AE-0020,SUB-022,Headache,2025-08-01,2025-08-16,Moderate,Not Related,Resolving
+AE-0021,SUB-022,Upper respiratory infection,,2025-10-07,Severe,Related,Resolved
+AE-0022,SUB-023,Headache,2025-04-11,2025-04-13,Mild,Not Related,Resolved
+AE-0023,SUB-023,Diarrhea,2025-02-01,2025-02-18,Moderate,Possibly Related,Resolving
+AE-0024,SUB-026,Fatigue,2025-03-14,2025-03-24,Mild,Not Related,Resolving
+AE-0025,SUB-026,Back pain,2025-05-03,2025-05-17,Severe,Related,Resolved with sequelae
+AE-0026,SUB-026,Dizziness,2025-03-24,2025-04-07,Moderate,Not Related,Resolving
+AE-0027,SUB-027,Insomnia,2025-08-23,2025-08-28,Moderate,Possibly Related,Resolved
+AE-0028,SUB-029,Back pain,2025-03-14,2025-03-11,Mild,Possibly Related,Ongoing
+AE-0029,SUB-031,Dizziness,2025-09-30,2025-10-07,Mild,Not Related,Ongoing
+AE-0030,SUB-031,Headache,2025-10-05,2025-10-24,Severe,Not Related,Resolving
+AE-0031,SUB-031,Upper respiratory infection,2025-07-27,2025-08-03,Severe,Possibly Related,Resolved
+AE-0032,SUB-031,Diarrhea,2025-09-28,2025-10-05,Moderate,Possibly Related,Resolving
+AE-0033,SUB-032,Diarrhea,2025-05-24,2025-06-02,Moderate,Not Related,Resolved with sequelae
+AE-0034,SUB-033,Injection site reaction,2025-06-17,2025-06-29,Moderate,Related,Resolved with sequelae
+AE-0035,SUB-034,Dizziness,2025-09-08,2025-09-27,Severe,Not Related,Resolved with sequelae
+AE-0036,SUB-036,Rash,2025-06-30,2025-07-18,Severe,Not Related,Ongoing
+AE-0037,SUB-042,Back pain,2025-04-03,2025-04-09,Severe,Related,Ongoing
+AE-0038,SUB-043,Insomnia,2025-04-13,2025-04-15,Severe,Related,Resolved
+AE-0039,SUB-044,Upper respiratory infection,2025-02-14,2025-02-22,Mild,Related,Resolving
+AE-0040,SUB-045,Injection site reaction,2025-04-10,2025-04-26,,Possibly Related,Resolved
+AE-0041,SUB-046,Dizziness,2025-05-22,2025-06-01,Mild,Related,Resolved with sequelae
+AE-0042,SUB-047,Rash,2025-09-25,2025-10-12,Moderate,Not Related,Ongoing
+AE-0043,SUB-048,Headache,2025-07-10,2025-07-18,Severe,Not Related,Resolving
+AE-0044,SUB-050,Nausea,2025-06-17,2025-06-30,Moderate,Possibly Related,Resolved with sequelae
+AE-0045,SUB-051,Headache,2025-03-12,2025-03-26,Severe,Possibly Related,Ongoing
+AE-0046,SUB-052,Back pain,2025-04-04,2025-04-01,Severe,Not Related,Resolved with sequelae
+AE-0047,SUB-053,Insomnia,2025-04-07,2025-04-09,Mild,Related,Ongoing
+AE-0048,SUB-054,Diarrhea,2025-03-11,2025-03-21,Mild,Possibly Related,Resolving
+AE-0049,SUB-054,Dizziness,2025-04-20,2025-04-25,Severe,Possibly Related,Resolved
+AE-0050,SUB-054,Rash,2025-03-11,2025-03-08,Severe,Not Related,Resolved with sequelae
+AE-0051,SUB-059,Upper respiratory infection,2025-02-20,2025-03-04,Severe,Not Related,Resolved with sequelae
