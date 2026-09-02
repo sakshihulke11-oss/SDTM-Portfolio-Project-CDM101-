@@ -1,6 +1,5 @@
 # SDTM Reporting Program: Implementation Guide
 
-**Version:** 2.0 (Updated with DQ Validation)  
 **Date:** August 2026  
 **Status:** Production-Ready Portfolio Implementation
 
@@ -107,7 +106,6 @@ Four domains are created following CDISC SDTM standards:
 ---
 
 #### **SECTION 7: Data Quality Summary Report**
-**Output File:** `data_quality_report.rtf`
 
 Includes:
 1. **Issue-Flagged Records** by domain (only records with DQ_TOTAL_ISSUES > 0)
