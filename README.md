@@ -1,10 +1,7 @@
 # SDTM Reporting with Data Quality Validation
 ## Clinical Data Management Portfolio Project (CDM101)
 
-**Status:** ✅ Production-Ready  
-**Last Updated:** August 2026  
-**Author:** Clinical Data Management Portfolio  
-**Language:** SAS (PROC IMPORT, PROC SQL, PROC REPORT, PROC MEANS, PROC FREQ)
+**Author:** Clinical Data Management Portfolio 
 
 ---
 
@@ -18,10 +15,6 @@ This is a **complete end-to-end SDTM implementation** demonstrating:
 - ✅ Clinical Study Report (CSR) tables and listings
 - ✅ Professional RTF output for regulatory submissions
 
-**Hiring managers typically ask:** *"Show me your SDTM implementation"*  
-**This project shows:** Comprehensive validation pipeline + proper domain sequencing + transparency reporting
-
----
 
 ## 🎯 Quick Start
 
@@ -132,25 +125,7 @@ ELSE                    → "NORMAL"
 
 ---
 
-## 📁 Project Structure
 
-```
-CDM_Portfolio/
-├── README.md                                (this file)
-├── CDM_validation.sas             (main program
-├── CDM_Validation_Queries                    (SQL)
-├── CDM_Data_Validation                        (Python)
-├── Validation_Rules_Reference.txt          (quick lookup)
-├── SDTM_Reporting_Implementation_Guide.md  (detailed documentation)
-├── source_data/
-│   ├── demographics.csv                    (input)
-│   ├── vitals.csv                         (input)
-│   ├── adverse_events.csv                 (input)
-│   └── lab_results.csv                    (input)
-└── output/
-    ├── clinical_study_tables.rtf           (CSR tables)
-    └── data_quality_report.rtf             (validation summary)
-```
 
 ---
 
@@ -222,9 +197,6 @@ STEP 4: GENERATE REPORTS
 - Missing results/units
 - Reference range missing or incomplete
 
-**Portfolio talking point:** "I created a separate DQ report so the data team could 
-see exactly which records need investigation. This approach maintains transparency 
-and traceability — critical for regulated environments."
 
 ---
 
@@ -260,40 +232,6 @@ Flagged for medical review
 
 ---
 
-## 💼 Interview Talking Points
-
-### "Tell me about your SDTM implementation"
-*"I built an end-to-end SDTM pipeline with 26 automated validation checks. I created 
-four domains (DM, VS, AE, LB) following CDISC standards. All records with data quality 
-issues are flagged and reported in a separate DQ report for investigation. This 
-maintains transparency and traceability while preventing data loss."*
-
-### "What edit checks did you implement?"
-*"Range checks (age 18-100, vital sign physiologic limits), logic checks (diastolic ≤ 
-systolic, end date ≥ start date), missing value checks, date sequence validation, and 
-reference range indicator derivation. Each check generates a binary flag, and all 
-flagged records are aggregated in a data quality report."*
-
-### "How would you handle found data quality issues?"
-*"I flag the records but don't exclude them. All flagged records appear in the data 
-quality report with specific issue type. The data coordinator would review, create 
-targeted queries to sites for clarification, and document resolution. This is standard 
-practice in regulated clinical trials."*
-
-### "Walk me through your AE analysis"
-*"I derived the worst severity per subject using SQL with a CASE statement to rank 
-severity levels (SEVERE=3, MODERATE=2, MILD=1) and used MAX aggregation. This is 
-standard for CSR reporting — we show one row per subject with their maximum severity 
-rather than one row per event. It prevents over-counting and gives a clearer picture 
-of safety risk per person."*
-
-### "Why create a separate DQ report?"
-*"It demonstrates transparency and traceability. In regulated environments, every edit 
-check must be documented and every failure must be explainable. A separate DQ report 
-shows exactly what was checked and which records failed, making it easy for auditors 
-and the data team to verify completeness."*
-
----
 
 ## 📈 Validation Summary Statistics
 
@@ -310,167 +248,16 @@ Laboratory Results     200                   2-5           1-2%
 **Normal pattern:** 1-3% flagged records (data entry typos, edge cases)  
 **Red flag:** >10% flagged (data collection or source system issue)
 
----
-
-## 🚀 Extending This Project
-
-### Next Steps (for portfolio evolution)
-
-**Phase 1: ✅ SDTM (This Project)**
-- Data validation
-- Domain construction
-- CSR reporting
-
-**Phase 2: ADaM (Analysis Dataset)**
-- Baseline derivation
-- Change from baseline
-- Analysis populations (ITT, PP)
-
-**Phase 3: Statistical Analysis**
-- Efficacy tables
-- Safety summary tables
-- Statistical testing
-
----
-
-## 🔍 Troubleshooting
-
-### Issue: "SAS log shows ERRORS"
-**Solution:** Check library paths in %LET statements. Verify directories exist 
-and are writable.
-
-### Issue: "RTF files are empty"
-**Solution:** Check SAS log for WARNINGS about missing variables. Likely a column 
-name mismatch. Verify CSV headers match expected names.
-
-### Issue: "No data quality issues reported"
-**Solution:** Means your data is clean! (Unusual but possible.) Check DQ report is 
-actually being generated.
-
-### Issue: "PROC IMPORT fails"
-**Solution:** Verify CSV files exist at specified path. Check file permissions. 
-Try `DATA step` + `INFILE` alternative if PROC IMPORT continues to fail.
-
----
-
-## 📚 Documentation Files
-
-| File | Purpose |
-|------|---------|
-| **README.md** (this file) | Project overview & quick start |
-| **SDTM_Reporting_Updated.sas** | Main SAS program (420 lines) |
-| **Validation_Rules_Reference.txt** | 26 validation rules with rationale |
-| **SDTM_Reporting_Implementation_Guide.md** | Detailed technical documentation |
-
----
-
-## ✅ Quality Checklist
-
-Before presenting to hiring managers:
-
-- [ ] Program runs without ERRORS or WARNING messages
-- [ ] Both RTF files generated successfully
-- [ ] DQ report shows at least some flagged records (if data isn't perfect)
-- [ ] CSR tables display correctly formatted
-- [ ] All validation rules documented with rationale
-- [ ] Can explain each of 26 validation checks
-- [ ] Ready to discuss how you'd handle discovered issues
-
----
-
-## 📝 Sample Data Structure
-
-### Source: demographics.csv
-```
-subject_id,site_id,enroll_date,age,sex,arm
-001,SITE01,2026-01-15,45,M,Treatment
-002,SITE01,2026-01-16,52,F,Control
-...
-```
-
-### Source: vitals.csv
-```
-subject_id,visit,visit_date,systolic_bp,diastolic_bp,heart_rate,temp_c,weight_kg
-001,Baseline,2026-01-15,120,80,72,37.0,75.5
-001,Week2,2026-01-29,118,78,70,36.9,75.3
-...
-```
-
-### Source: adverse_events.csv
-```
-ae_id,subject_id,ae_term,start_date,end_date,severity,relatedness,outcome
-AE001,001,Headache,2026-02-01,2026-02-02,MILD,Unrelated,Resolved
-...
-```
-
-### Source: lab_results.csv
-```
-subject_id,visit,visit_date,test_name,result,unit,normal_low,normal_high
-001,Baseline,2026-01-15,Hemoglobin,14.2,g/dL,12.0,17.5
-...
-```
-
----
 
 ## 🏥 Regulatory Compliance
 
 This implementation aligns with:
 - ✅ **ICH-GCP** — Data traceability and quality
 - ✅ **CDISC SDTM** — Domain structure and sequencing
-- ✅ **21 CFR Part 11** — Audit trail and control
-- ✅ **FDA Guidance** — Documented validation rules
 
----
 
-## 👥 Use Cases
-
-### Academic/Portfolio
-- Demonstrate SDTM knowledge to hiring managers
-- Show data validation expertise
-- Prove ability to produce regulatory-ready output
-
-### CRO/Pharma Companies
-- Template for CDM validation pipeline
-- Customizable validation rules per protocol
-- Reusable for multiple studies
-
-### Clinical Trial Data Centers
-- Training material for junior data managers
-- Quality control template
-- Submission-ready CSR output
-
----
-
-## 📞 Questions?
-
-For portfolio interviews, be prepared to answer:
-1. Why you chose specific validation ranges
-2. How you'd handle discovered data issues
-3. Why you create a separate DQ report
-4. What SDTM is and why it matters
-5. How this extends to ADaM
-
-**Honest answer:** "This portfolio project shows I understand SDTM structure, 
-data validation rigor, and regulatory requirements. I can explain every line 
-of code and justify every validation rule."
-
----
 
 ## 📄 License
 
 Portfolio project — for educational and demonstration purposes.
 
----
-
-## Version History
-
-| Version | Date | Changes |
-|---------|------|---------|
-| 1.0 | Jan 2026 | Baseline CSR tables only |
-| 2.0 | Aug 2026 | Added 26 validation checks, separate DQ report, improved documentation |
-| 2.1 | TBD | Planned: ADaM derivations |
-
----
-
-**Status:** ✅ Ready for Portfolio / Interview Review  
-**Tested:** ✅ SAS 9.4+ with sample clinical trial data
