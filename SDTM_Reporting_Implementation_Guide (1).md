@@ -8,7 +8,7 @@
 
 ## Overview
 
-The updated SDTM reporting program (`SDTM_Reporting_Updated.sas`) integrates comprehensive **data quality validation** with **SDTM domain construction** and **clinical study report (CSR) generation**. This is a significant upgrade from the baseline version.
+The updated SDTM reporting program integrates comprehensive **data quality validation** with **SDTM domain construction** and **clinical study report (CSR) generation**. This is a significant upgrade from the baseline version.
 
 ### Key Improvements Over Original Program
 
