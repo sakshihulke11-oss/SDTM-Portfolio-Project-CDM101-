@@ -117,7 +117,7 @@ Includes:
 - Shows you **caught data quality issues** before analysis
 - Demonstrates understanding of **edit checks** (critical CDM skill)
 - Proves ability to **flag problems** vs. blindly accepting data
-- Portfolio talking point: *"I identified X validation errors and documented them for the DTL"*
+
 
 
 
