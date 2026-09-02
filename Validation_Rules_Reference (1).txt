@@ -163,7 +163,7 @@ Rule 4: Reference Range Derivation
     IF RESULT < NORMAL_LOW → LBNRIND = "LOW"
     IF RESULT > NORMAL_HIGH → LBNRIND = "HIGH"
     ELSE → LBNRIND = "NORMAL"
-  Action: Use indicator for medical review (no exclusion)
+  
 
 
 
